@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import styles from './App.module.css';
 
 const App: Component = () => {
+  const test = 'test';
   return (
     <div class={styles.App}>
       <header class={styles.header}>
@@ -11,12 +12,7 @@ const App: Component = () => {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <a
-          class={styles.link}
-          href="https://github.com/solidjs/solid"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a class={styles.link} href="https://github.com/solidjs/solid" target="_blank" rel="noopener noreferrer">
           Learn Solid
         </a>
       </header>
