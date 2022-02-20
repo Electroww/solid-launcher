@@ -1,0 +1,12 @@
+.sidebar {
+    @apply w-80 h-full border-r border-white/[0.09] bg-white/[0.01];
+}
+.logo {
+    @apply text-white font-extrabold text-2xl text-opacity-90;
+}
+.logoContent {
+    @apply w-full px-8 py-8;
+}
+.menuContent {
+    @apply w-full px-8 py-8;
+}
