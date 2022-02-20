@@ -1,8 +1,8 @@
 .background {
-    @apply absolute top-0 left-0 right-0 bottom-0 overflow-hidden;
+    @apply absolute top-0 left-0 right-0 bottom-0 overflow-hidden z-10;
 }
 .background img {
-    @apply absolute h-full object-cover z-10;
+    @apply absolute h-full object-cover;
 }
 .bgMask {
     @apply absolute top-0 left-0 right-0 bottom-0 z-20;

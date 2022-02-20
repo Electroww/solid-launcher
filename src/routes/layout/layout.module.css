@@ -4,3 +4,6 @@
 .content {
     @apply flex-1 relative; 
 }
+.pageContent {
+    @apply flex flex-col p-10 flex-1 relative z-20; 
+}

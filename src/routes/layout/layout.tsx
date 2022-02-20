@@ -1,6 +1,6 @@
 import { Component } from 'solid-js';
 import styles from './layout.module.css';
-import { Background, Sidebar } from './../../components';
+import { Background, Sidebar, Header } from './../../components';
 
 const Layout: Component = (props) => {
   return (
@@ -8,7 +8,10 @@ const Layout: Component = (props) => {
       <Sidebar></Sidebar>
       <div class={styles.content}>
         <Background></Background>
-        {props.children}
+        <div class={styles.pageContent}>
+          <Header></Header>
+          {props.children}
+        </div>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import { Component } from 'solid-js';
-import styles from './layout.module.css';
+import styles from './background.module.css';
 import LostArkBg from './../../assets/bg/lost-ark.jpg';
 
 const background: Component = () => {
