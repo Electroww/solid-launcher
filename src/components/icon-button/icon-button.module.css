@@ -1,4 +1,10 @@
 .iconButton {
     @apply flex justify-center items-center cursor-pointer text-xl w-12 h-12 
-    hover:bg-white hover:bg-opacity-5 transition-all rounded-lg;
+     transition-all rounded-lg;
+}
+.iconButton:hover:not(.active) {
+    @apply bg-[#251544] bg-opacity-50;
+}
+.active {
+    @apply bg-[#251544] shadow-inner;
 }

@@ -1,0 +1,27 @@
+.bgSelector {
+    @apply relative;
+}
+.bgSelectorContent {
+    @apply absolute flex flex-col gap-7 w-[36rem] max-h-96 right-0 mt-5
+    shadow-sm bg-[#251544] rounded-xl p-8;
+}
+
+ .bgSelectorContent::after {
+    @apply absolute right-6 -top-6  content-center transform translate-x-1/2 translate-y-1/2;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #251544;
+    content: '';
+} 
+
+.bgList {
+    @apply grid grid-cols-3 gap-4;
+}
+.bgItem {
+    @apply w-full h-20 rounded-lg cursor-pointer bg-cover overflow-hidden;
+}
+.bgItemMask {
+    @apply w-full h-full bg-[#120925] opacity-70;
+}

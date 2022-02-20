@@ -1,13 +1,11 @@
 import { Component } from 'solid-js';
 import styles from './header.module.css';
-import { IconButton } from '../';
+import { BgSelector } from '../';
 
 const header: Component = () => {
   return (
     <div class={styles.header}>
-      <IconButton>
-        <i class="bx bx-paint"></i>
-      </IconButton>
+      <BgSelector></BgSelector>
     </div>
   );
 };

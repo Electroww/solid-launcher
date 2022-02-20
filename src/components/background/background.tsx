@@ -1,12 +1,12 @@
 import { Component } from 'solid-js';
 import styles from './background.module.css';
-import LostArkBg from './../../assets/bg/lost-ark.jpg';
+import { Cyberpunk2077 } from './../../assets/bg/';
 
 const background: Component = () => {
   return (
     <div class={styles.background}>
       <div class={styles.bgMask}></div>
-      <img src={LostArkBg} alt="Lost Ark" />
+      <img src={Cyberpunk2077} alt="Lost Ark" />
     </div>
   );
 };
