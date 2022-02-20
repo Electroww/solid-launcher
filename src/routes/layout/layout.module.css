@@ -1,35 +1,6 @@
-.background {
-    @apply absolute top-0 left-0 right-0 bottom-0 overflow-hidden;
+.layout {
+    @apply h-full flex flex-row;
 }
-
-.ray-1 {
-   @apply absolute z-20;
-    width: 180px;
-    height: 5000px;
-    border-radius: 50%;
-    @apply  bg-pink-400 ;
-    filter: blur(50px);
-    opacity: 0.06;
-    transform: translate(400%, -38%) rotate(-45deg);
-}
-
-.ray-2 {
-    @apply absolute z-10;
-    width: 180px;
-    height: 5000px;
-    border-radius: 50%;
-    @apply  bg-purple-500 ;
-    filter: blur(50px);
-    opacity: 0.05;
-    transform: translate(200%, -30%) rotate(-45deg);
-}
-.ray-3 {
-    @apply absolute z-10;
-    width: 180px;
-    height: 5000px;
-    border-radius: 50%;
-    @apply  bg-cyan-200 ;
-    filter: blur(50px);
-    opacity: 0.05;
-    transform: translate(150%, -70%) rotate(-45deg);
+.content {
+    @apply flex-1 relative; 
 }

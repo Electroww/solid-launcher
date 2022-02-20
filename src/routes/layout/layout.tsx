@@ -1,16 +1,15 @@
-import { Component, For } from 'solid-js';
+import { Component } from 'solid-js';
 import styles from './layout.module.css';
-
-const RAY = [styles['ray-1'], styles['ray-2'], styles['ray-3']];
+import { Background, Sidebar } from './../../components';
 
 const Layout: Component = (props) => {
   return (
-    <div>
-      <div class={styles.background}>
-        <For each={RAY}>{(ray) => <div class={ray} />}</For>
+    <div class={styles.layout}>
+      <Sidebar></Sidebar>
+      <div class={styles.content}>
+        <Background></Background>
+        {props.children}
       </div>
-      <div class="bg-light-100">supposed to be left</div>
-      {props.children}
     </div>
   );
 };

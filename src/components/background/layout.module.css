@@ -1,0 +1,10 @@
+.background {
+    @apply absolute top-0 left-0 right-0 bottom-0 overflow-hidden;
+}
+.background img {
+    @apply absolute h-full object-cover z-10;
+}
+.bgMask {
+    @apply absolute top-0 left-0 right-0 bottom-0 z-20;
+    background: radial-gradient(farthest-corner at top left, rgba(21, 11, 41, .5) 0%,  rgba(21, 11, 41, .8) 30%,  rgba(21, 11, 41, 1) 70%);
+}

@@ -9,6 +9,10 @@
   --color-primary: #130b29;
 }
 
-body {
-  @apply font-sans bg-primary;
+body, html {
+  @apply h-full font-sans bg-primary;
+}
+
+#root {
+  @apply h-full;
 }
